@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kafiraya-client/static/css/main.738356da.chunk.css",
-    "main.js": "/kafiraya-client/static/js/main.4c7c277b.chunk.js",
-    "main.js.map": "/kafiraya-client/static/js/main.4c7c277b.chunk.js.map",
+    "main.js": "/kafiraya-client/static/js/main.627c48cc.chunk.js",
+    "main.js.map": "/kafiraya-client/static/js/main.627c48cc.chunk.js.map",
     "runtime-main.js": "/kafiraya-client/static/js/runtime-main.21d2c8de.js",
     "runtime-main.js.map": "/kafiraya-client/static/js/runtime-main.21d2c8de.js.map",
     "static/js/2.2dee36f0.chunk.js": "/kafiraya-client/static/js/2.2dee36f0.chunk.js",
     "static/js/2.2dee36f0.chunk.js.map": "/kafiraya-client/static/js/2.2dee36f0.chunk.js.map",
     "index.html": "/kafiraya-client/index.html",
-    "precache-manifest.1f92d9d810b8c1143820a6c7fd21727f.js": "/kafiraya-client/precache-manifest.1f92d9d810b8c1143820a6c7fd21727f.js",
+    "precache-manifest.93f2b7a1b84b1a8128a923a6b398f900.js": "/kafiraya-client/precache-manifest.93f2b7a1b84b1a8128a923a6b398f900.js",
     "service-worker.js": "/kafiraya-client/service-worker.js",
     "static/css/main.738356da.chunk.css.map": "/kafiraya-client/static/css/main.738356da.chunk.css.map",
     "static/js/2.2dee36f0.chunk.js.LICENSE.txt": "/kafiraya-client/static/js/2.2dee36f0.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.21d2c8de.js",
     "static/js/2.2dee36f0.chunk.js",
     "static/css/main.738356da.chunk.css",
-    "static/js/main.4c7c277b.chunk.js"
+    "static/js/main.627c48cc.chunk.js"
   ]
 }
