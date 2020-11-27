@@ -1,0 +1,115 @@
+.Nama-barang{
+    min-width: 300px;
+    text-align: center;
+}
+.Input{
+border-radius: 30px;
+padding-left: 10px;
+}
+.Button{
+    border-radius: 30px;
+    width: 100px;
+    height: 25px;
+    background-color: green;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.Barcode{
+    width: 100%;
+}
+.Input-Barcode{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.Input-Barcode input{
+    width: 100px;
+    border-radius: 20px;
+    height: 24px;
+    text-align: center;
+}
+.Render-Item{
+    display: flex;
+}
+.Item-Render{
+    padding: 10px;
+    width: 200px;
+}
+.Item-Render input{
+    width: 200px;
+    height: 24px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+}
+.Item-Render button{
+    width: 100px;
+    height: 27px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: green;
+    border: none;
+    color: white;
+}
+.Item-Render span{
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 19px;
+    min-width: 300px;
+}
+.dropdown-additems{
+    min-width: 200px;
+    border-radius: 30px;
+    height: 28px;
+    border: none;
+}
+.Additem{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr ;
+    gap: 1rem;
+    padding-bottom: 10px;
+}
+
+.wrapper-item{
+    min-width: 100px;
+    border:2px solid green;
+    color: black;
+    font-size: 18px;
+    border-radius: 30px;
+    height: 25px;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrapper-barcode{
+    padding-bottom: 20px;
+}
+.wrapper-barcode input{
+    border-radius: 10px;
+    text-align: center;
+    border-color: green;
+}
+.wrapper-action input{
+    border:2px solid green;
+    color: black;
+    border-radius: 30px;
+    text-align: center;
+    height: 25px;
+}
+
+.wrapper-action button{
+    width: 80px;
+    height: 27px;
+    border-radius: 30px;
+    border:none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}

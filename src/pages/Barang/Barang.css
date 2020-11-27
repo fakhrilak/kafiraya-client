@@ -1,0 +1,24 @@
+.no{
+    min-width: 40px;
+    text-align: center;
+}
+.namabarang{
+    min-width: 200px;
+    text-align: center;
+}
+.harga{
+    min-width: 100px;
+    text-align: center;
+}
+.banyak{
+    min-width: 100px;
+    text-align: center;
+}
+.nilai{
+    min-width: 100px;
+    text-align: center;
+}
+.Continer-barang{
+    text-align: center;
+    margin-left: 10%;
+}

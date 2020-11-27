@@ -1,0 +1,14 @@
+.Header-Transaksi{
+    width: 100%;
+    background-color: lawngreen;
+}
+.Header-Transaksi button{
+    float: left;
+    height: 30px;
+    background-color: rgb(117, 117, 134);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+}

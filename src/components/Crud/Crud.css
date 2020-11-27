@@ -1,0 +1,50 @@
+.Ciontainer-CRUD{
+    display: flex;
+    border-bottom:4px solid #686464;
+}
+.Handle-Massage{
+  width: 100%;
+}
+.Massage-Icon{
+  float: right;
+  padding:10px;
+  cursor: pointer;
+}
+.Crud{
+    padding:10px
+}
+.form-group{
+    padding-bottom: 20px;
+  }
+  .custom-input{
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+    border-color: black;
+    padding-left: 10px;
+    text-align: center;
+  }
+  .form-submit{
+    padding-bottom: 0px;
+  }
+  .btn-submit{
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    border-color: green;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: green;
+    color: white;
+  }
+  .custom-select{
+    width: 150px;
+    height: 30px;
+    border-width: 3px;
+    border-radius: 30px;
+    border-color: #3399ff;
+ }
+
+.wrapper-select{
+  padding: 10px;
+}

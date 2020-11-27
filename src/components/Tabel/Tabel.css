@@ -1,0 +1,76 @@
+.outtable{
+    padding-top: 30px;
+    padding: 20px;
+    widows: 100%;
+}
+
+.short{
+    width: 30px;
+}
+.email{
+    width: auto;
+    text-align: center; 
+}
+.namakategori{
+    width: 1300px;
+    text-align: center; 
+}
+.telpon{
+    width: auto;
+    text-align: center; 
+}
+.alamat{
+    width: auto;
+    text-align: center; 
+}
+.nama{
+    width: 400px;
+    text-align: center;
+}
+.namapt{
+    width: 200px;
+    text-align: center;
+}
+.harga{
+    width: auto;
+    text-align: center;
+}
+.satuan{
+    width: auto;
+    text-align: center;
+}
+.stock{
+    width: auto;
+    text-align: center;
+}
+.kategori{
+    width: 100px;
+    text-align: center;
+}
+.suplier{
+    width: 350px;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    font-family: arial;
+    color:#5E5B5C;
+}
+
+thead th{
+    text-align: left;
+    padding: 10px;
+}
+
+tbody td{
+    border-top: 1px solid #e3e3e3;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even){
+    background: #F6F5FA;
+}
+
+tbody tr:hover{
+    background: #b4b4bb
+}

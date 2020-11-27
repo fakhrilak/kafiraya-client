@@ -1,0 +1,60 @@
+.Container-Navbar{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    border-bottom:4px solid #686464;
+    border-top:4px solid #686464;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#3399ff;
+  }
+  
+  li {
+    float: left;
+    list-style-type: none; 
+  }
+  .btn-login{
+    padding-top: 25px;
+    margin-inline-end: 20;
+  }
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+  }
+  li button{
+    width: 70px;
+    height: 30px;
+    border-radius: 6px;
+    background-color:#3399ff;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: black;
+    color: black;
+  }
+
+  @media screen and (max-width:480px){
+    li{
+      float: null;
+    }
+    li button{
+      width: 70px;
+      height: 30px;
+      border-radius: 6px;
+      background-color:#3399ff;
+      font-weight: bold;
+      border-width: 2px;
+      border-color: black;
+      color: black;
+    }
+
+  }

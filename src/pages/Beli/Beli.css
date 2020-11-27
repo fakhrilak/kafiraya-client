@@ -1,0 +1,31 @@
+.Modal-Sales{
+    display: flex;
+}
+.Select-Beli{
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    border-color: black;
+}
+.Button-Beli{
+    padding-left: 50px;
+}
+.Button-Beli button{
+    width: 150px;
+    height: 32px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    border-color: black;
+}
+.total{
+    min-width: 100px;
+}
+.bayar{
+    min-width: 100px;
+}
+.sisa{
+    min-width: 100px;
+}
