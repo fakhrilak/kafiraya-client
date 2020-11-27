@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kafiraya-client/precache-manifest.01508aef2710b0e66f36e5f7735752d3.js"
+  "/kafiraya-client/precache-manifest.2e75cedf5c31b6479f055d69870d0aa3.js"
 );
 
 self.addEventListener('message', (event) => {
