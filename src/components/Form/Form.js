@@ -15,7 +15,7 @@ const Form = ({form,
   getCategory,
   postSales,
   postSatuan,
-  sales:{sales},
+  sales:{sales,statussales},
   category:{category},
   satuan:{satuan},
   item:{status},
@@ -82,7 +82,7 @@ const Form = ({form,
         }else if(code === "Item"){
           postItem(Nama,Suplier,Category,Satuan,Harga_Beli,Harga_Jual,Barcode)
         }
-        if(status){
+        if(status||statussales){
           setFormData({
             Nama: "",
             PT: "",

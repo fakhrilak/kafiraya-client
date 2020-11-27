@@ -15,7 +15,8 @@ const initialState = {
     loading: true,
     error:null,
     salesId:[],
-    massageSales:false
+    massageSales:false,
+    statussales:false
   };
 
   export default function (state = initialState, action) {
@@ -36,12 +37,14 @@ const initialState = {
         case POST_SALES_SUCCESS:
             return{
                 ...state,
-                massageSales:payload.massage
+                massageSales:payload.massage,
+                statussales:true
             }
         case POST_SALES_FAIL:
             return{
                 ...state,
-                massageSales:payload.massage
+                massageSales:payload.massage,
+                statussales:false
             }
         case GET_SALES_ID_SUCCESS:
             return{

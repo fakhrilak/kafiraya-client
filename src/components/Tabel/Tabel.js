@@ -8,6 +8,7 @@ import {deletSatuan,getSatuanId} from "../../redux/action/satuan"
 import {deletItem,getItem, getItemId} from "../../redux/action/Item"
 import {connect} from "react-redux"
 import Editt from "../Edit/Edit"
+import FilterResults from 'react-filter-search';
 const Tabel = ({
     item,
     Head,
@@ -24,8 +25,8 @@ const Tabel = ({
     getItem,
     getItemId
 }) => {
-    console.log(code)
     const [modal,setModal]=useState(false)
+    const [value,setValue] =  useState("")
     const HandleDelet = (id)=>{
         if(code === "category"){
             deletCategory(id)
@@ -49,18 +50,26 @@ const Tabel = ({
             getItemId(id)
         }
     }
+    console.log(value)
   return (
     <>
         <div className = "outtable">
             <Editt modal={modal} code={code} setModal={setModal}/>
             <table>
+            {/* <thead>
+                <tr>
+                    <input
+                    value={value}
+                    onChange={e => setValue(e.target.value)}
+                    />
+                </tr>
+            </thead> */}
             <thead>
                 <tr>
                     {Delet && <th>Hapus</th>}
                     {Edit && <th>Edit</th>}
                     {Head.map((head)=>(
-                        <th className={head.class}>{head.Judul}</th>
-                        
+                        <th className={head.class}>{head.Judul}</th>                    
                     ))}
                 </tr>
             </thead>
@@ -125,7 +134,9 @@ const Tabel = ({
                             <td>{item.nama}</td>
                         </tr>
                     </tbody>
-                ))):(item.map((item)=>(
+                ))):(
+                    
+                    item.map((item)=>(
                     <tbody>
                         <tr>
                             
