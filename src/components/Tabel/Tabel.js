@@ -26,7 +26,9 @@ const Tabel = ({
     getItemId
 }) => {
     const [modal,setModal]=useState(false)
-    const [value,setValue] =  useState("")
+    const [searchTerm, setSearchTerm] = React.useState("");
+    const [searchResults, setSearchResults] = React.useState([]);
+    const [search, setSearch] = React.useState("");
     const HandleDelet = (id)=>{
         if(code === "category"){
             deletCategory(id)
@@ -50,7 +52,36 @@ const Tabel = ({
             getItemId(id)
         }
     }
-    console.log(value)
+    let sorted= []
+    let Barcode = []
+    if (code === "Item"){
+      sorted = [...item].sort((a,b)=>{
+        return b.kode - a.kode
+      })
+      if (searchResults.length > 0){
+          Barcode = searchResults
+      }else{
+          Barcode = sorted
+      }
+      
+    }
+    const handleChange = event => {
+        setSearchTerm(event.target.value);
+        
+      };
+      const handleChange2 = event => {
+        setSearch(event.target.value);
+      }
+    React.useEffect(() => {
+    const A = sorted.filter(person =>
+        person.namabarang.toLowerCase().includes(search)
+    );
+    const results = A.filter(person =>
+        person.kode.toLowerCase().includes(searchTerm)
+    );
+    setSearchResults(results);
+    }, [searchTerm,search,item]);
+    
   return (
     <>
         <div className = "outtable">
@@ -64,6 +95,26 @@ const Tabel = ({
                     />
                 </tr>
             </thead> */}
+            {code === "Item" && <thead>
+                <tr>
+                    <th>
+                    <input
+                    type="text"
+                    placeholder="Search Barcode"
+                    value={searchTerm}
+                    onChange={handleChange}
+                    />
+                    </th>
+                    <th>
+                    <input
+                    type="text"
+                    placeholder="Search Nama"
+                    value={search}
+                    onChange={handleChange2}
+                    />
+                    </th>                   
+                </tr>
+            </thead>}
             <thead>
                 <tr>
                     {Delet && <th>Hapus</th>}
@@ -73,7 +124,7 @@ const Tabel = ({
                     ))}
                 </tr>
             </thead>
-            {code === "Item"? (item.map((item)=>(
+            {code === "Item"? (Barcode.map((item)=>(
             <tbody>
                 <tr>
                     {Delet && <td><FontAwesomeIcon 

@@ -13,6 +13,11 @@
 .Crud{
     padding:10px
 }
+.select-input input{
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-color: black;
+}
 .form-group{
     padding-bottom: 20px;
   }

@@ -8,9 +8,10 @@ const Item = ({getItem,item:{item}}) => {
   const [Tambah,setTambah]= useState(false)
   const [Delet,setDelet] =useState(false)
   const [Edit,setEdit] =useState(false)
+  const [refresh,setRefresh] = useState(false)
     useEffect(()=>{
         getItem()
-    },[Tambah])
+    },[Tambah,refresh])
     const code = "Item"
     
   return (
@@ -24,6 +25,8 @@ const Item = ({getItem,item:{item}}) => {
       code={code}
       Edit={Edit}
       setEdit={setEdit}
+      refresh={refresh}
+      setRefresh={setRefresh}
       />
       <div>
         <Tabel 

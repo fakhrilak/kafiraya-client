@@ -15,6 +15,8 @@ const Crud = ({
   setEdit,
   Edit,
   item:{massage},
+  refresh,
+  setRefresh,
   setCode
 }) => {
 
@@ -92,7 +94,9 @@ const Crud = ({
       </div> 
       {code === "Beli" || code === "Detail" || code === "AddItemTrans" || code === "Pelanggan" ||
        code === "Kasir" || code === "AddItemTranskeluar" || code === "DetailTkeluar"?
-      (null):(<Form Tambah={Tambah} form={form} code={code} setTambah={setTambah}/>)}
+      (null):(<Form Tambah={Tambah} form={form} code={code} setTambah={setTambah}
+        refresh={refresh} setRefresh={setRefresh}
+      />)}
       
     </div>
   )
