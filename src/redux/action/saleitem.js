@@ -35,6 +35,7 @@ export const postSaleItem =(ItemId,beli,banyak,TkeluarId)=> async(dispatch)=>{
             type:POST_SALEITEM_FAIL,
             payload: err.response.data.error
         })
+        console.log(err.response.data.error)
     }
 }
 

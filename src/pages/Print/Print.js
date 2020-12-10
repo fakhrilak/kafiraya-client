@@ -39,7 +39,7 @@ class ComponentToPrint extends React.Component {
             <p className="t10">Bayar : {TkeluarId.bayar}</p>
             {TkeluarId.sisa === 0 ? <h5>LUNAS</h5> : <h5>BELOM LUNAS</h5>}
             <p className="t10">TERIMA KASIH</p>
-            <p className="t10">*barang yang sudah diberi tidak </p>
+            <p className="t10">*barang yang sudah dibeli tidak </p>
             <p className="t10">dapat dikembalikan</p>
           </div>
               

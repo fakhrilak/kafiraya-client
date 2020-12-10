@@ -29,10 +29,9 @@ const AdditemTransaction = ({
         getItem()
     },[])
     
-  const HandlePush=()=>{
+  const HandlePush=(id,jual)=>{
     setCode("AddItemTranskeluar")
-    postSaleItem(`${ItemId}`,`${Jual}`,Banyak,match)
-      
+    postSaleItem(`${id}`,`${jual}`,Banyak,match)
   }
 
   const handleChange = event => {
@@ -87,7 +86,7 @@ const AdditemTransaction = ({
                                 </div>                                
                             </div>
                             <div className="wrapper-action">
-                                <button onClick={()=>HandlePush()}>Add</button>
+                                <button onClick={()=>HandlePush(item.id,item.jual)}>Add</button>
                             </div>
                         </div>
                     ))):null}
