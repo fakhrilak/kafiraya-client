@@ -14,6 +14,9 @@ const Kasir = ({getBuyer,getTkeluar,tkeluar:{Tkeluar},buyer:{buyer},postTkeluar,
     const [Tambah,setTambah]= useState(false)
     const [Delet,setDelet] =useState(false)
     const [Edit,setEdit] =useState(false)
+    const [searchTerm, setSearchTerm] = React.useState("");
+    const [searchResults, setSearchResults] = React.useState([]);
+    const [search, setSearch] = React.useState("");
     const [formData, setFormData] = useState({
         BuyerId:""
     })
@@ -43,7 +46,16 @@ const Kasir = ({getBuyer,getTkeluar,tkeluar:{Tkeluar},buyer:{buyer},postTkeluar,
         deletTkeluar(id)
     }
 
-
+    const handleChange = event => {
+        setSearchTerm(event.target.value);
+        
+      };
+    React.useEffect(() => {
+        const results = Tkeluar.filter(person =>
+            person.buyer.nama.toLowerCase().includes(searchTerm)
+        );
+        setSearchResults(results);
+        }, [searchTerm,search,Tkeluar]);
   return (
     <div>
       <div>
@@ -60,6 +72,16 @@ const Kasir = ({getBuyer,getTkeluar,tkeluar:{Tkeluar},buyer:{buyer},postTkeluar,
       <div style={{marginLeft:"10%",marginRight:"10%",textAlignLast:"center"}}>
         <table>
             <thead>
+            <tr>
+                    <th>
+                    <input
+                    type="text"
+                    placeholder="Search Nama"
+                    value={searchTerm}
+                    onChange={handleChange}
+                    />
+                    </th>                  
+                </tr>
                     <tr>
                         {Delet && <th>Hapus</th>}
                         {Head.map((head)=>(
@@ -70,7 +92,7 @@ const Kasir = ({getBuyer,getTkeluar,tkeluar:{Tkeluar},buyer:{buyer},postTkeluar,
                     </tr>
             </thead>
             <tbody>
-            {Tkeluar.map((tmasuk)=>(
+            {searchResults.map((tmasuk)=>(
                         <tr >
                             {Delet && <td><FontAwesomeIcon 
                             icon={faTrash} 

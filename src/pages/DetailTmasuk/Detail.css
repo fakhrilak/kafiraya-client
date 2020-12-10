@@ -71,7 +71,7 @@ padding-left: 10px;
 .Additem{
     align-items: center;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr ;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr ;
     gap: 1rem;
     padding-bottom: 10px;
 }

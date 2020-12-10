@@ -17,27 +17,34 @@ const AdditemTransaction = ({
     setCode,
     item:{item},
 }) => {
-    const right = "20%"
-    const left = "20%"
+    const right = "5%"
+    const left = "5%"
     let Jual,ItemId;
     const [Banyak,setBanyak]=useState("")
     const [cari,setCari] = useState()
+    const [searchTerm, setSearchTerm] = React.useState("");
+    const [searchResults, setSearchResults] = React.useState([]);
+
     useEffect(()=>{
         getItem()
     },[])
+    
   const HandlePush=()=>{
     setCode("AddItemTranskeluar")
     postSaleItem(`${ItemId}`,`${Jual}`,Banyak,match)
       
   }
-  let B = [...item] 
-  let filtered = B.filter((el)=>el.kode === cari );
-  
-  if (filtered[0]){
-      ItemId = filtered[0].id
-      Jual = filtered[0].jual
+
+  const handleChange = event => {
+    setSearchTerm(event.target.value);
   }
-  
+  React.useEffect(() => {
+    const results = item.filter(data =>
+        data.namabarang.toLowerCase().includes(searchTerm)
+    );
+    setSearchResults(results);
+    }, [searchTerm]);
+
   return (
     <div onDoubleClick={()=>setTambah(!Tambah)}>
         <Modal show={Tambah} left={left} right={right}>
@@ -46,15 +53,14 @@ const AdditemTransaction = ({
                 <h3>Transaksi No : {match}</h3>
                 <div className="wrapper-barcode">
                     <input
-                    placeholder= "Barcode"
-                    value={cari}
-                    onChange={e => setCari(e.target.value)}
+                    type="text"
+                    placeholder="Search Nama"
+                    value={searchTerm}
+                    onChange={handleChange}
                     />
                 </div>
             </div>
-            <div>                                 
-                {filtered[0] ?(<div>
-                    {filtered[0] ? (filtered.map((item)=>(
+                    {searchResults[0] ? (searchResults.map((item)=>(
                        <div className="Additem">
                             <div>
                                 <div className="wrapper-item">
@@ -64,6 +70,11 @@ const AdditemTransaction = ({
                             <div>
                                 <div className="wrapper-item">
                                     {item.jual}
+                                </div>                                
+                            </div>
+                            <div>
+                                <div className="wrapper-item">
+                                    {item.stock}
                                 </div>                                
                             </div>
                             <div>
@@ -79,13 +90,10 @@ const AdditemTransaction = ({
                                 <button onClick={()=>HandlePush()}>Add</button>
                             </div>
                         </div>
-                    ))):(<div>Loading..</div>)}
-                    
-                    </div>):null}              
-            </div>
+                    ))):null}
             
-        </Modal>    
-    </div>
+            </Modal>    
+        </div>
   )
 }
 const mapStateToProps = (state)=>({
