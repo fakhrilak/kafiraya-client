@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b5ea18fbd9294ab89b918ce12ec5732",
+    "revision": "279f2c0b0c82b892cb7b5f22dedd0e10",
     "url": "/kafiraya-client/index.html"
   },
   {
-    "revision": "c548a3386d13aa4eb76a",
+    "revision": "e84a54c8f5c4bd88a710",
     "url": "/kafiraya-client/static/css/main.1963b69f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kafiraya-client/static/js/2.99395427.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c548a3386d13aa4eb76a",
-    "url": "/kafiraya-client/static/js/main.90c27619.chunk.js"
+    "revision": "e84a54c8f5c4bd88a710",
+    "url": "/kafiraya-client/static/js/main.fa8a27e5.chunk.js"
   },
   {
     "revision": "b738da3e4c3e8f3b9560",
