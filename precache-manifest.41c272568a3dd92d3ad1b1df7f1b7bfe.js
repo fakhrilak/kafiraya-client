@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b4a9ffc7ec913eb279d4146e929f5c7c",
+    "revision": "6b5ea18fbd9294ab89b918ce12ec5732",
     "url": "/kafiraya-client/index.html"
   },
   {
-    "revision": "3427caec0e2f003ee5d4",
-    "url": "/kafiraya-client/static/css/main.1442d082.chunk.css"
+    "revision": "c548a3386d13aa4eb76a",
+    "url": "/kafiraya-client/static/css/main.1963b69f.chunk.css"
   },
   {
-    "revision": "e6d1f784efb9a6ff2d1f",
-    "url": "/kafiraya-client/static/js/2.d4e1f51d.chunk.js"
+    "revision": "c23cdaf771e2d5e916a1",
+    "url": "/kafiraya-client/static/js/2.99395427.chunk.js"
   },
   {
     "revision": "4df4c58fd3db8af31000da1d75d059ea",
-    "url": "/kafiraya-client/static/js/2.d4e1f51d.chunk.js.LICENSE.txt"
+    "url": "/kafiraya-client/static/js/2.99395427.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3427caec0e2f003ee5d4",
-    "url": "/kafiraya-client/static/js/main.b183c59b.chunk.js"
+    "revision": "c548a3386d13aa4eb76a",
+    "url": "/kafiraya-client/static/js/main.90c27619.chunk.js"
   },
   {
     "revision": "b738da3e4c3e8f3b9560",
